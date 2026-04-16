@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website HTML and CSS and JavaScript</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+     <!-- Box Icon Link for Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+
+  </head>
+  <body>
+    <header>
+        
+       <nav class="navbar">
+        <a class="logo" href="#">travlez<span>.ph</span></a>
+        
+        <ul class="menu-links">
+          
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <a href="index.html">Home</a>
+          <a href="#">Package Tour</a>
+          <a href="#">Faqs</a>
+          <a href="#">Blogs</a>
+           <a href="#">Contact Us</a>
+          
+        </ul>
+         <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="content">
+       <h2 id="alertButton">Thailand</h2>
+    </section>
+ 
+    <!-- Section for light box-->
+     <section class="lightbox_container">
+
+	<h2 class="lightbox_title">Beautiful Places Must Visit in Thailand</h2>
+
+	<!--<div class="gallery">
+		<img src="https://picsum.photos/id/1015/600/400" data-caption="Beautiful Mountain View">
+		<img src="https://picsum.photos/id/1020/600/400" data-caption="openPopupForest Path">
+		<img src="https://picsum.photos/id/1035/600/400" data-caption="Serene Lake">
+	</div>-->
+
+	<div class="gallery">
+    
+		<img src="image/phuket_thailand.jpg" data-caption="Phuket Jungle" width="370" height="300">
+		<img src="image/chiangmai_thailand.jpg" data-caption="Chiangmai place" width="370" height="300">
+		<img src="image/bangkok_thailand.jpg" data-caption="Bangkok Floating Market" width="370" height="300" >
+		<img src="image/ayutthaya_thailand.jpg" data-caption="Ayutthaya Buddha Statue" width="370" height="300" >
+		<img src="image/krabi_thailand.jpg" data-caption="Krabi Island" width="370" height="300" >
+		<img src="image/phiphi_thailand.jpg" data-caption="Phi Phi Beach" width="370" height="300" >
+    
+	</div>
+
+	<!-- Popup container -->
+	<div class="popup" id="popup">
+		<span class="close-btn" id="close-btn">&times;</span>
+		<img id="popup-img">
+		<p class="caption" id="popup-caption"></p>
+	</div>
+
+     </section>
+
+     <section>
+<footer>
+      <div class="section_container">
+        <div class="footer_section">
+          <div class="useful_links">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="contact_us">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <i class="bx bx-current-location"></i>
+                <span>Makati City, Philippines</span>
+              </li>
+              <li>
+                <i class="bx bxs-phone-call"></i> <span>+63 105671119</span>
+              </li>
+              <li>
+                <i class="bx bxs-time-five"></i>
+                <span>Mon-Sun : 10:00 AM - 7:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="follow_us">
+            <h3>Follow</h3>
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-instagram-alt"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </section>
+ <script src="js/lightbox.js"></script>
+  </body>
+</html>
