@@ -1,0 +1,331 @@
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: orangered;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none; 
+}
+
+.navbar .logo:hover{
+color: skyblue;
+ }
+.navbar .menu-links {
+  display: flex;
+  list-style-type: none;
+  font-size: 16px;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: normal;
+  text-decoration: none;
+  transition: 0.2s ease;
+
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
+
+.hero-section {
+  height: 50vh;
+  background-image: url("../image/gallery.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  opacity: none;
+}
+
+.hero-section .content {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  color: #FFF;
+}
+
+.hero-section .content h2 {
+  color: white;
+  font-size: 2rem;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+  cursor: pointer;
+
+}
+.hero-section .content h2:hover {
+  color: gold;
+}
+
+.hero-section .content p {
+  display: flex;
+  justify-content: center;
+  color: floralwhite;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-section .content p:hover {
+  color: #ddd;
+}
+
+ /*button {
+  color: brown;
+  font-weight: 500;
+  font-size: 20px;
+  border: solid 1px whitesmoke;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;*/
+  /*background-color: #f2f2f2;*/
+  /*background-color: transparent;
+  padding: 5px 100px;
+}
+
+#toggle li{
+display: flex;
+justify-content: center;
+text-align: center;
+margin: auto;
+}
+
+.hero-section .content button:hover {
+  background-color: whitesmoke;
+  color: brown;
+}*/
+
+/* footer {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #000;
+  font-size: 15px;
+  opacity: 1;
+}*/
+  
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn {
+  color: #FFF;
+  cursor: pointer;
+  display: none;
+}
+
+.monthly{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+        input, select, button {
+            margin: 10px 0;
+            padding: 8px;
+            width: 100%;
+        }
+        #result {
+            margin-top: 20px;
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: orangered;
+  padding: 60px 20px;  
+  z-index: 1;
+}
+
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.footer_section h3 {
+  margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer_section .useful_links ul li {
+    margin: 20px 0;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer_section .useful_links ul li a {
+  text-decoration: none;
+    color: white;
+    font-size: 17px; 
+
+}
+
+.footer_section .useful_links ul li a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}
+
+.footer_section .contact_us h3{
+  color: white;
+}
+
+.footer_section .contact_us ul li { 
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.footer_section .contact_us ul li i:hover {
+  color: #ddd;
+}
+.footer_section .contact_us ul li i {
+    font-size: 25px;
+    color: white;
+}
+
+.footer_section .contact_us ul li span {
+    font-size: 17px;
+    color: white;
+}
+.footer_section .contact_us ul li span:hover {
+  color: #ddd;
+}
+
+.follow_us h3{
+  color: white;
+}
+
+.footer_section .follow_us i {  
+  margin-right: 25px;
+  font-size: 26px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;  
+}
+
+.footer_section .follow_us i:hover {
+    color: #ddd;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 2rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #000;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  
+  .hero-section .content button {
+    padding: 5px 100px;
+  }
+   .footer_section{
+  flex-direction: column;
+  gap: 24px;
+
+  }
+
+  .footer_section .useful_links {
+    text-align: start;
+ 
+  }
+}

@@ -1,0 +1,641 @@
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 999;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  color: orangered;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none; 
+}
+
+.navbar .logo:hover{
+color: orangered;
+ }
+.navbar .menu-links {
+  display: flex;
+  list-style-type: none;
+  font-size: 16px;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #000;
+  font-weight: normal;
+  text-decoration: none;
+  transition: 0.2s ease;
+
+}
+
+.navbar a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url("../image/img-4.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+ padding: 0 20px;
+ 
+  opacity: none;
+  
+}
+
+.hero-section .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #FFF;
+}
+
+.hero-section .content h2 {
+  color: white;
+  font-size: 5rem;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+
+}
+.hero-section .content h2:hover {
+  color: #ddd;
+}
+
+.hero-section .content p {
+  display: flex;
+  justify-content: center;
+  color: floralwhite;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-section .content p:hover {
+  color: #ddd;
+}
+
+  
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn {
+  color: #000;
+  cursor: pointer;
+  display: none;
+}
+/* Section for product container */
+
+   .product_container {
+      max-width: 1300px;
+      margin: 40px;
+	  margin-top: 50px;
+      font-family: Arial, sans-serif;
+	  text-align: center;
+	  background-color: #fef9f9;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+	  gap: 30px;
+      
+    
+    }
+
+	/* korea product image */
+		.product_korea {
+			border: 1px solid #ccc;
+			padding: 20px;
+			display: inline-block;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			background-color: #fff;
+			
+		}
+		.product_korea img {
+			width: 300px;
+			height: auto;
+			border-radius: 10px;
+			margin-bottom: 10px;
+			transition: transform 0.4s ease;
+		}
+			.product_korea:hover img{
+				transform: scale(1.1);
+			}
+
+		.controls_korea {
+			margin: 20px 0;
+		}
+		#decreaseBtn_korea, #increaseBtn_korea {
+			padding: 10px 20px;
+			font-size: 18px;
+			margin: 5px;
+			cursor: pointer;
+		}
+		.total_korea {
+			font-size: 24px;
+			margin-top: 10px;
+		}
+		#checkoutBtn_korea {
+			background-color: #28a745;
+			color: white;
+			border: none;
+			padding: 7px;
+			border-radius: 5px;
+		}
+
+
+    /* Japan product image */
+
+		.product_japan {
+			border: 1px solid #ccc;
+			padding: 20px;
+			display: inline-block;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			background-color: #fff;
+		}
+		.product_japan img {
+			width: 300px;
+			height: auto;
+			border-radius: 10px;
+			margin-bottom: 10px;
+			transition: transform 0.4s ease;
+		}
+		.product_japan:hover img {
+			transform: scale(1.1)
+		}
+		.controls_japan {
+			margin: 20px 0;
+		}
+		#decreaseBtn_japan, #increaseBtn_japan{
+			padding: 10px 20px;
+			font-size: 18px;
+			margin: 5px;
+			cursor: pointer;
+		}
+		.total_japan {
+			font-size: 24px;
+			margin-top: 10px;
+		}
+		#checkoutBtn_japan {
+			background-color: #28a745;
+			color: white;
+			border: none;
+			padding: 7px;
+			border-radius: 5px;
+		}
+
+     /*Vietnam product image*/
+
+		.product_vietnam {
+			border: 1px solid #ccc;
+			padding: 20px;
+			display: inline-block;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			background-color: #fff;
+		}
+		.product_vietnam img {
+			width: 300px;
+			height: auto;
+			border-radius: 10px;
+			margin-bottom: 10px;
+			transition: transform 0.4s ease;
+		}
+		.product_vietnam:hover img {
+			transform: scale(1.1);
+		}
+		.controls_vietnam {
+			margin: 20px 0;
+		}
+		#decreaseBtn_vietnam, #increaseBtn_vietnam {
+			padding: 10px 20px;
+			font-size: 18px;
+			margin: 5px;
+			cursor: pointer;
+		}
+		.total_vietnam {
+			font-size: 24px;
+			margin-top: 10px;
+		}
+		#checkoutBtn_vietnam {
+			background-color: #28a745;
+			color: white;
+			border: none;
+			padding: 7px;
+			border-radius: 5px;
+		}
+/* dubai product image */
+		.product_dubai {
+			border: 1px solid #ccc;
+			padding: 20px;
+			display: inline-block;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			background-color: #fff;
+			
+		}
+		.product_dubai img {
+			width: 300px;
+			height: auto;
+			border-radius: 10px;
+			margin-bottom: 10px;
+			transition: transform 0.4s ease;
+		}
+			.product_dubai:hover img{
+				transform: scale(1.1);
+			}
+
+		.controls_dubai {
+			margin: 20px 0;
+		}
+		#decreaseBtn_dubai, #increaseBtn_dubai {
+			padding: 10px 20px;
+			font-size: 18px;
+			margin: 5px;
+			cursor: pointer;
+		}
+		.total_dubai {
+			font-size: 24px;
+			margin-top: 10px;
+		}
+		#checkoutBtn_dubai {
+			background-color: #28a745;
+			color: white;
+			border: none;
+			padding: 7px;
+			border-radius: 5px;
+		}
+
+		/* taiwan product image */
+		.product_taiwan {
+			border: 1px solid #ccc;
+			padding: 20px;
+			display: inline-block;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			background-color: #fff;
+			
+		}
+		.product_taiwan img {
+			width: 300px;
+			height: auto;
+			border-radius: 10px;
+			margin-bottom: 10px;
+			transition: transform 0.4s ease;
+		}
+			.product_taiwan:hover img{
+				transform: scale(1.1);
+			}
+
+		.controls_taiwan {
+			margin: 20px 0;
+		}
+		#decreaseBtn_taiwan, #increaseBtn_taiwan {
+			padding: 10px 20px;
+			font-size: 18px;
+			margin: 5px;
+			cursor: pointer;
+		}
+		.total_taiwan {
+			font-size: 24px;
+			margin-top: 10px;
+		}
+		#checkoutBtn_taiwan {
+			background-color: #28a745;
+			color: white;
+			border: none;
+			padding: 7px;
+			border-radius: 5px;
+		}
+
+/* thailand product image */
+		.product_thailand {
+			border: 1px solid #ccc;
+			padding: 20px;
+			display: inline-block;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			background-color: #fff;
+			
+		}
+		.product_thailand img {
+			width: 300px;
+			height: auto;
+			border-radius: 10px;
+			margin-bottom: 10px;
+			transition: transform 0.4s ease;
+		}
+			.product_thailand:hover img{
+				transform: scale(1.1);
+			}
+
+		.controls_thailand {
+			margin: 20px 0;
+		}
+		#decreaseBtn_thailand, #increaseBtn_thailand {
+			padding: 10px 20px;
+			font-size: 18px;
+			margin: 5px;
+			cursor: pointer;
+		}
+		.total_thailand {
+			font-size: 24px;
+			margin-top: 10px;
+		}
+		#checkoutBtn_thailand {
+			background-color: #28a745;
+			color: white;
+			border: none;
+			padding: 7px;
+			border-radius: 5px;
+		}
+
+
+/* Product image */
+
+    .product-Img_container {
+		font-family: Arial, sans-serif;
+		max-width: 500px;
+		margin: auto;
+		text-align: center;
+		margin-top: 70px;
+		}
+		.product {
+			margin-top: 20px;
+		}
+		.large-image {
+			width: 100%;
+			height: auto;
+			border: 1px solid #ddd;
+		}
+		.image-gallery {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 10px 0;
+		}
+		.image-gallery img {
+			width: 80px;
+			height: auto;
+			margin: 5px;
+			cursor: pointer;
+			border: 1px solid #ccc;
+		}
+		.arrow {
+			font-size: 24px;
+			cursor: pointer;
+			margin: 0 10px;
+		}
+		.description {
+			margin-top: 15px;
+			padding: 10px;
+			border-top: 1px solid #ddd;
+		}
+		p {
+			font-size: x-large;
+			font-weight: 600;
+			align-items: center;
+		
+		}
+		.installment_container{
+		
+			margin: 0 auto;
+			max-width: 1800px;
+		}
+		.installment_option{
+			justify-content: space-between;
+			margin-bottom: 50px;
+		}
+		h2{ 
+		max-width: 100%;
+			justify-content: center;
+			margin: auto;
+			display: flex;
+			text-align: center;
+		}
+
+		#yearlyInstallment, #interestCalculator, #converter{
+			
+			border-color: none;
+			color: darkgreen;
+			text-decoration: none;
+			text-align: center;
+			margin: 0 auto;
+			justify-content: center;
+			display: flex;
+			padding: 50px;
+			max-width: 900;
+			margin-top: 20px;
+			
+			font-size: x-large;
+			font-weight: 600;
+
+		}
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+			color: red;
+		}
+
+		footer {
+		
+ 			 width: 100%;
+			position: relative;
+			bottom: 0;
+			background: orangered;
+			padding: 60px 20px;  
+			z-index: 1;
+			}
+
+			.footer_section {
+			display: flex;
+			justify-content: space-between;
+			
+			}
+			.footer_section h3 {
+			margin-bottom: 16px;
+				font-size: 22px;
+				font-weight: 600;
+				color: #fff;
+			}
+
+.footer_section .useful_links ul li {
+    margin: 20px 0;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer_section .useful_links ul li a {
+  text-decoration: none;
+    color: white;
+    font-size: 17px; 
+
+}
+
+.footer_section .useful_links ul li a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}
+
+.footer_section .contact_us h3{
+  color: white;
+}
+
+.footer_section .contact_us ul li { 
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.footer_section .contact_us ul li i:hover {
+  color: #ddd;
+}
+.footer_section .contact_us ul li i {
+    font-size: 25px;
+    color: white;
+}
+
+.footer_section .contact_us ul li span {
+    font-size: 17px;
+    color: white;
+}
+.footer_section .contact_us ul li span:hover {
+  color: #ddd;
+}
+
+.follow_us h3{
+  color: white;
+}
+
+.footer_section .follow_us i {  
+  margin-right: 25px;
+  font-size: 26px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;  
+}
+
+.footer_section .follow_us i:hover {
+    color: #ddd;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 2rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #000;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 4rem;
+    line-height: 50px;
+  }
+.product_container {
+	justify-content: center;
+	max-width: 100%;
+	flex-direction: column;
+	padding: 50px;
+	
+	
+}
+.footer_section{
+  flex-direction: column;
+  gap: 24px;
+
+  }
+
+  .footer_section .useful_links {
+    text-align: start;
+  }
+}

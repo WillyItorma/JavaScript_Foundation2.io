@@ -1,0 +1,39 @@
+body {
+            font-family: Arial, sans-serif;
+            background: #fefefe;
+            padding: 50px;
+            text-align: center;
+            
+        }
+        .summary {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+        h1 {
+            color: #28a745;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .back-btn {
+            background-color: #007bff;
+            color: white;
+        }
+        .pay-btn {
+            background-color: #28a745;
+            color: white;
+        }
