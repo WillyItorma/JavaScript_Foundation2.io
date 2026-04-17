@@ -87,9 +87,10 @@ color: #fff;
 .lightbox_container {
 	max-width: 1300px;
 	margin: 0 auto;
-	margin-bottom: 60px:
+	padding: 50px;
+	margin-bottom: 50px:
   margin-top: 50px;
-	margin-left: 40px;
+
   background-color: #FFF;
   font-family: Arial, sans-serif;
   flex-direction: row;
