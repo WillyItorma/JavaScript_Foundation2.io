@@ -91,6 +91,8 @@ color: #fff;
   background-color: #FFF;
   font-family: Arial, sans-serif;
   text-align: center;
+	display: absolute;
+	justify-content: center;
 }
 
     .lightbox_title{
