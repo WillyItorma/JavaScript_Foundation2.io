@@ -140,7 +140,9 @@ color: orangered;
 	   margin-top: 50px;
 	   background-color: lightgrey;
 	   text-align: center;
-	   justify-content: space-between;
+	   gap:30px;
+	   text-align: center;
+	   
       
     
     }
