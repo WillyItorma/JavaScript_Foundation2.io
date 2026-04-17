@@ -635,7 +635,6 @@ color: orangered;
   }
 .product_container {
 	justify-content: center;
-	
 	flex-direction: column;
 	padding: 50px;
 	margin: 0 auto;
