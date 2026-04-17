@@ -319,15 +319,7 @@ footer {
   .hero-section .content button {
     padding: 5px 100px;
   }
-  .footer_section{
-  flex-direction: column;
-  gap: 24px;
 
-  }
-
-  .footer_section .useful_links {
-    text-align: start;
-  }
   .lightbox_container{
   justify-content: center;
   margin-top: 50px;
@@ -337,5 +329,15 @@ footer {
     max-width: 90%;
     align-items: center;
     
+  }
+	.footer_section{
+  flex-direction: column;
+  gap: 24px;
+
+  }
+
+  .footer_section .useful_links {
+    text-align: start;
+ 
   }
 }
