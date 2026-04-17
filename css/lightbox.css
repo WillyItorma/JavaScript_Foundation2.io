@@ -259,7 +259,7 @@ footer {
   display: none;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   header {
     padding: 10px;
   }
@@ -331,6 +331,77 @@ footer {
     
   }
 	.footer_section{
+  flex-direction: column;
+  gap: 24px;
+
+  }
+
+  .footer_section .useful_links {
+    text-align: start;
+ 
+  }
+}*/
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 2rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #000;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  
+  .hero-section .content button {
+    padding: 5px 100px;
+  }
+   .footer_section{
   flex-direction: column;
   gap: 24px;
 
